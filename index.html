@@ -7,13 +7,14 @@
 </head>
 <body>
     <form>
-        <label>Credit Score: </label><input placeholder="750"><br>
-        <label>Spending in 3 months: </label><input placeholder="3,000">(make scale)<br>
+        <label>Credit Score: </label><input id="creditScore" placeholder="750"><br>
+        <label>Spending in 3 months: </label><input id="spend" placeholder="3,000">(make scale)<br>
         <label>Are you open to business cards?</label>
-        <select>
+        <select id="bizCards">
             <option value="No">No</option>
             <option value="Yes">Yes</option>
-        </select>
+        </select><br>
+        <label>5/24?: </label><input id="numLastTwoYears" placeholder="3">/24<br> (pop up for companion pass)
     </form>
 <button type="submit" onclick="doWork()">Submit</button>
 </body>
